@@ -13,8 +13,20 @@
         height: 40px;
     }
 
+    &__icon-container {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        z-index: 2;
+    }
+
     &__icon-close {
         display: none;
+        fill: currentColor;
+    }
+
+    &__icon-open {
+        fill: currentColor;
     }
 
     &__nav-list {
@@ -114,4 +126,11 @@ nav {
 
 .header-main__menu-button.is-open .burger-menu {
     display: block;
+}
+
+.header-main__menu-button {
+
+    &:hover, &:focus {
+        color: $background-color-active;
+    }
 }

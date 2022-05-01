@@ -73,8 +73,18 @@ body {
   width: 40px;
   height: 40px;
 }
+.header-main__icon-container {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 2;
+}
 .header-main__icon-close {
   display: none;
+  fill: currentColor;
+}
+.header-main__icon-open {
+  fill: currentColor;
 }
 .header-main__nav-list {
   display: -webkit-box;
@@ -179,6 +189,10 @@ nav {
   display: block;
 }
 
+.header-main__menu-button:hover, .header-main__menu-button:focus {
+  color: #2196F3;
+}
+
 .logo {
   font-family: "Raleway", sans-serif;
   font-size: 26px;
@@ -237,12 +251,78 @@ nav {
 }
 
 .burger-menu {
+  display: none;
   position: absolute;
   width: 100%;
-  top: 60px;
+  top: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.1215686275);
-  display: none;
+  height: auto;
+  padding: 48px 40px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1607843137), 0px 2px 4px 0px rgba(0, 0, 0, 0.0784313725), 0px 4px 8px 0px rgba(0, 0, 0, 0.0392156863);
+          box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1607843137), 0px 2px 4px 0px rgba(0, 0, 0, 0.0784313725), 0px 4px 8px 0px rgba(0, 0, 0, 0.0392156863);
+}
+.burger-menu__contact-links {
+  margin-bottom: 64px;
+}
+.burger-menu__nav-links {
+  margin-bottom: 302px;
+}
+.burger-menu__contact-tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2196F3;
+}
+.burger-menu__contact-mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #757575;
+}
+.burger-menu__social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.burger-menu__social-link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: #2196F3;
+}
+
+.burger-menu__nav-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-menu__contact-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.burger-menu__social-item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+  padding-right: 10px;
+}
+.burger-menu__social-item:not(:first-child) {
+  padding-left: 10px;
+}
+
+.burger-menu__nav-link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+.burger-menu__nav-link:hover, .burger-menu__nav-link:focus {
+  color: #2196F3;
 }
 
 .burger-menu.is-open {
