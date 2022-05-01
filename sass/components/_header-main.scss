@@ -6,12 +6,19 @@
     border-bottom: 1px solid $border-color;
     background-color: $white-color;
 
+    @media screen and (min-width:768px) {
+        height: 80px;
+    }
+
 
     &__menu-button {
         display: block;
         width: 40px;
         height: 40px;
         color: $main-color;
+        @media screen and (min-width:768px) {
+            display: none;
+        }
     }
 
     &__icon-container {
@@ -58,19 +65,48 @@
     }
 
     &__contacts {
-        display: flex;
-        margin-left: auto;
-        align-items: center;
         display: none;
+
+        @media screen and (min-width:768px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+
+        }
+
+        @media screen and (min-width:1200px) {
+            align-items: center;
+            flex-direction: row;
+        }
     }
 
     &__contacts-item:not(:first-child) {
-        margin-left: 50px;
+        margin-top: 10px;
+        @media screen and (min-width:1200px) {
+            margin-left: 50px;
+            margin-top: 0;
+            white-space: nowrap;
+        }
     }
 
-    &__contacts-icon {
+    &__contacts-tel, &__contacts-mail {
         margin-right: 10px;
         fill: currentColor;
+    }
+
+    &__contacts-tel {
+        @media screen and (min-width:1200px) {
+            width: 10px;
+            height: 16px;
+        }
+    }
+
+    &__contacts-mail {
+        @media screen and (min-width:1200px) {
+            width: 16px;
+            height: 12px;
+        }
     }
 }
 
@@ -91,6 +127,13 @@
     display: flex;
     align-items: center;
     color: $secondary-color;
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
 
     &:hover,
     &:focus {
@@ -103,6 +146,9 @@
     &:not(:first-child) {
         margin-left: 50px;
         display: none;
+        @media screen and (min-width:768px) {
+            display: block;
+        }
     }
 
     &:nth-child(2) {

@@ -68,11 +68,21 @@ body {
   border-bottom: 1px solid #ECECEC;
   background-color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .header-main {
+    height: 80px;
+  }
+}
 .header-main__menu-button {
   display: block;
   width: 40px;
   height: 40px;
   color: #212121;
+}
+@media screen and (min-width: 768px) {
+  .header-main__menu-button {
+    display: none;
+  }
 }
 .header-main__icon-container {
   position: absolute;
@@ -116,21 +126,59 @@ body {
   background-color: #2196F3;
 }
 .header-main__contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: none;
 }
-.header-main__contacts-item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .header-main__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+  }
 }
-.header-main__contacts-icon {
+@media screen and (min-width: 1200px) {
+  .header-main__contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.header-main__contacts-item:not(:first-child) {
+  margin-top: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .header-main__contacts-item:not(:first-child) {
+    margin-left: 50px;
+    margin-top: 0;
+    white-space: nowrap;
+  }
+}
+.header-main__contacts-tel, .header-main__contacts-mail {
   margin-right: 10px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .header-main__contacts-tel {
+    width: 10px;
+    height: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header-main__contacts-mail {
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .header-main__nav-link {
@@ -152,6 +200,14 @@ body {
       -ms-flex-align: center;
           align-items: center;
   color: #757575;
+  font-size: 12px;
+  line-height: 1.16;
+}
+@media screen and (min-width: 1200px) {
+  .header-main__contacts-link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 .header-main__contacts-link:hover, .header-main__contacts-link:focus {
   color: #2196F3;
@@ -160,6 +216,11 @@ body {
 .header-main__nav-item:not(:first-child) {
   margin-left: 50px;
   display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-main__nav-item:not(:first-child) {
+    display: block;
+  }
 }
 .header-main__nav-item:nth-child(2) {
   margin-left: 93px;
@@ -196,11 +257,16 @@ nav {
 
 .logo {
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-align: left;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+  }
 }
 .logo__color-part {
   color: #2196F3;
