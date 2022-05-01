@@ -1,0 +1,14 @@
+.burger-menu {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    left: 0;
+    background-color: $button-shadow-color-first;
+    display: none;
+
+}
+
+.burger-menu.is-open {
+    display: block;
+}
+
