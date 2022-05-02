@@ -115,12 +115,16 @@
     vertical-align: bottom;
     position: relative;
 
-    // &:hover,
-    // &:focus {
-    //     color: $background-color-active;
-    // }
     &:active {
         color: $background-color-active;
+    }
+
+    @media screen and (min-width:1200px) {
+    
+        &:hover,
+        &:focus {
+            color: $background-color-active;
+        }
     }
 }
 
@@ -134,15 +138,18 @@
     @media screen and (min-width:1200px) {
         font-size: 14px;
         line-height: 1.14;
+
+        &:hover,
+        &:focus {
+            color: $background-color-active;
+        }
     }
 
-    // &:hover,
-    // &:focus {
-    //     color: $background-color-active;
-    // }
     &:active {
         color: $background-color-active;
     }
+
+    
 }
 
 .header-main__nav-item {
@@ -156,8 +163,12 @@
     }
 
     &:nth-child(2) {
-        // margin-left: 93px;
+        
         margin-left: 88px;
+
+        @media screen and (min-width:1200px) {
+            margin-left: 93px;
+        }
     }
 }
 

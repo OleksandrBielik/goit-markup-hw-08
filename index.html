@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
-        <header class="header-main">
+        <!-- <header class="header-main">
             <div class="container container--flex">
                 <nav>
                     <ul class="header-main__nav-list">
@@ -67,9 +67,9 @@
                     </li>
                 </ul>
             </div>
-        </header>
-        <!-- <main class="web-studio">
-            <section class="section section--inverse">
+        </header> -->
+        <main class="web-studio">
+            <!-- <section class="section section--inverse">
                 <div class="web-studio__wrapper">
                     <div class="container">
                         <div class="web-studio__order">
@@ -131,7 +131,14 @@
                     <ul class="web-studio__activity">
                         <li>
                             <a class="web-studio__activity-link" href="#">
-                                <img class="web-studio__activity-image" src="images/coding.jpg" alt="Разрабатываем приложения с 0" width="370">
+                                <img class="web-studio__activity-image" 
+                                    srcset="
+                                        ./images/desktop-apps.jpg 1x,
+                                        ./images/desktop-apps@2x.jpg 2x
+                                    "
+                                    src="./images/desktop-apps.jpg" 
+                                    alt="Десктопные приложения" 
+                                    width="370">
                                 <div class="web-studio__activity-overlay">
                                     <p class="web-studio__activity-description">Десктопные приложения</p>
                                 </div>
@@ -139,7 +146,12 @@
                         </li>
                         <li>
                             <a class="web-studio__activity-link" href="#">
-                                <img class="web-studio__activity-image" src="images/mobile.jpg" alt="Адаптируем приложения под любые мобильные устройства" width="370">
+                                <img class="web-studio__activity-image" 
+                                srcset="
+                                    ./images/mobile-apps.jpg 1x,
+                                    ./images/mobile-apps@2x.jpg 2x
+                                " src="./images/mobile-apps.jpg" alt="Мобильные приложения" 
+                                width="370">
                                 <div class="web-studio__activity-overlay">
                                     <p class="web-studio__activity-description">Десктопные приложения</p>
                                 </div>
@@ -147,21 +159,33 @@
                         </li>
                         <li>
                             <a class="web-studio__activity-link" href="#">
-                                <img class="web-studio__activity-image" src="images/touchpad.jpg" alt="Адаптируем приложения под любые тачпад устройства" width="370">
+                                <img class="web-studio__activity-image" 
+                                srcset="
+                                    ./images/design-solutions.jpg 1x,
+                                    ./images/design-solutions@2x.jpg 2x
+                                " src="./images/design-solutions.jpg" alt="Мобильные приложения" 
+                                width="370">
                                 <div class="web-studio__activity-overlay">
-                                    <p class="web-studio__activity-description">Десктопные приложения</p>
+                                    <p class="web-studio__activity-description">Дизайнерские решения</p>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </section>
+            </section> -->
             <section class="section">
                 <div class="container">
                     <h2 class="web-studio__title">Наша команда</h2>
                     <ul class="web-studio__team">
                         <li class="web-studio__team-item">
-                            <img class="web-studio__team-image" src="images/designer.jpg" alt="Дизайнер" width="270">
+                            <img class="web-studio__team-image" 
+                            srcset="
+                                ./images/product-designer.jpg 1x,
+                                ./images/product-designer@2x.jpg 2x
+                            "
+                            src="./images/product-designer.jpg" 
+                            alt="Дизайнер" 
+                            width="450">
                             <div class="web-studio__team-wrapper">
                                 <h3 class="web-studio__team-title">Игорь Демьяненко</h3>
                                 <p class="web-studio__team-description">Product Designer</p>
@@ -198,7 +222,14 @@
                             </div>
                         </li>
                         <li class="web-studio__team-item">
-                            <img class="web-studio__team-image" src="images/frontend.jpg" alt="Фронтенд разработчик" width="270">
+                            <img class="web-studio__team-image" 
+                            srcset="
+                                ./images/frontend-developer.jpg 1x,
+                                ./images/frontend-developer@2x.jpg 2x
+                            "
+                            src="./images/frontend-developer.jpg" 
+                            alt="Фронтенд разработчик" 
+                            width="450">
                             <div class="web-studio__team-wrapper">
                                 <h3 class="web-studio__team-title">Ольга Репина</h3>
                                 <p class="web-studio__team-description"><span>Frontend Developer</span></p>
@@ -235,7 +266,14 @@
                             </div>
                         </li>
                         <li class="web-studio__team-item">
-                            <img class="web-studio__team-image" src="images/marketing.jpg" alt="Маркетолог" width="270">
+                            <img class="web-studio__team-image" 
+                            srcset="
+                                ./images/marketing.jpg 1x,
+                                ./images/marketing@2x.jpg 2x
+                            "
+                            src="./images/marketing.jpg" 
+                            alt="Маркетолог" 
+                            width="450">
                             <div class="web-studio__team-wrapper">
                                 <h3 class="web-studio__team-title">Николай Тарасов</h3>
                                 <p class="web-studio__team-description">Marketing</p>
@@ -272,7 +310,14 @@
                             </div>
                         </li>
                         <li class="web-studio__team-item">
-                            <img class="web-studio__team-image" src="images/ui_designer.jpg" alt="Дизайнер" width="270">
+                            <img class="web-studio__team-image" 
+                            srcset="
+                                ./images/ui-designer.jpg 1x,
+                                ./images/ui-designer@2x.jpg 2x
+                            "
+                            src="./images/ui-designer.jpg" 
+                            alt="Дизайнер" 
+                            width="450">
                             <div class="web-studio__team-wrapper">
                                 <h3 class="web-studio__team-title">Михаил Ермаков</h3>
                                 <p class="web-studio__team-description">UI Designer</p>
@@ -311,7 +356,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <!-- <section class="section">
                 <div class="container">
                     <h2 class="web-studio__title">Постоянные клиенты</h2>
                     <ul class="web-studio__clients">
@@ -359,9 +404,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-        </main> -->
-        <footer class="footer-main">
+            </section> -->
+        </main>
+        <!-- <footer class="footer-main">
             <div class="container container--flex-wrap">
                 <div class="footer-main__address-wrapper">
                     <a class="logo logo--white" href="./index.html"><span class="logo__color-part">Web</span>Studio</a>
@@ -467,7 +512,7 @@
                     </svg>
                 </button>
             </div>
-        </div>
+        </div> -->
         <script src="./js/modal.js"></script>
         <script src="./js/mobile-menu.js"></script>
     </body>
