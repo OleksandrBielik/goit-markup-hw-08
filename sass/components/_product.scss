@@ -9,6 +9,11 @@
         margin-bottom: 4px;
     }
 
+    &__item {
+        max-width: 450px;
+        width: 100%;
+    }
+
     &__description {
         font-size: 16px;
         line-height: 1.8;
@@ -40,11 +45,12 @@
         letter-spacing: 0.03em;
         text-align: left;
         color: $white-color;
+
+        @media screen and (max-width:369px) {
+            font-size: 14px;
+        }
     }
 
-    &__image {
-        vertical-align: bottom;
-    }
 }
 
 .product__link {

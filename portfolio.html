@@ -27,11 +27,39 @@
                         </li>
                         <li class="header-main__nav-item"><a class="header-main__nav-link" href="#">Контакты</a></li>
                     </ul>
+                    <button class="header-main__menu-button" type="button" aria-expanded="false" data-menu-button>
+                        <svg class="header-main__icon-container" width="40" height="40"
+                            aria-label="Переключатель мобильного меню">
+                            <use class="header-main__icon-open" href="./images/svg/icons.svg#icon-menu-open"></use>
+                            <use class="header-main__icon-close" href="./images/svg/icons.svg#icon-menu-close"></use>
+                        </svg>
+                    </button>
+                    <div class="burger-menu" data-menu>
+                        <ul class="burger-menu__nav-links">
+                            <li class="burger-menu__nav-item"><a class="burger-menu__nav-link" href="./index.html">Студия</a>
+                            </li>
+                            <li class="burger-menu__nav-item"><a class="burger-menu__nav-link"
+                                    href="./portfolio.html">Портфолио</a></li>
+                            <li class="burger-menu__nav-item"><a class="burger-menu__nav-link" href="">Контакты</a></li>
+                        </ul>
+                        <ul class="burger-menu__contact-links">
+                            <li class="burger-menu__contact-item"><a class="burger-menu__contact-tel"
+                                    href="tel:+380961111111">+38 096 111 11 11</a></li>
+                            <li class="burger-menu__contact-item"><a class="burger-menu__contact-mail"
+                                    href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        </ul>
+                        <ul class="burger-menu__social-links">
+                            <li class="burger-menu__social-item"><a class="burger-menu__social-link" href="">Instagram</a></li>
+                            <li class="burger-menu__social-item"><a class="burger-menu__social-link" href="">Twitter</a></li>
+                            <li class="burger-menu__social-item"><a class="burger-menu__social-link" href="">Facebook</a></li>
+                            <li class="burger-menu__social-item"><a class="burger-menu__social-link" href="">LinkedIn</a></li>
+                        </ul>
+                    </div>
                 </nav>
                 <ul class="header-main__contacts">
                     <li class="header-main__contacts-item">
                         <a class="header-main__contacts-link" href="mailto:info@devstudio.com">
-                            <svg class="header-main__contacts-icon" width="16" height="12">
+                            <svg class="header-main__contacts-mail" width="14" height="10">
                                 <use href="./images/svg/icons.svg#icon-envelope"></use>
                             </svg>
                             info@devstudio.com
@@ -39,7 +67,7 @@
                     </li>
                     <li class="header-main__contacts-item">
                         <a class="header-main__contacts-link" href="tel:+380961111111">
-                            <svg class="header-main__contacts-icon" width="10" height="16">
+                            <svg class="header-main__contacts-tel" width="10" height="14">
                                 <use href="./images/svg/icons.svg#icon-smartphone"></use>
                             </svg>
                             +38 096 111 11 11
@@ -81,7 +109,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/laptop-design.jpg" alt="Дизайн веб-сайта" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/web-site-techno.jpg 1x,
+                                                ./images/portfolio/web-site-techno@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/web-site-techno.jpg" 
+                                            alt="Дизайн веб-сайта" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Технокряк</h2>
@@ -100,7 +135,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/basketball.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/design-poster.jpg 1x,
+                                                ./images/portfolio/design-poster@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/design-poster.jpg" 
+                                            alt="Постер New Orlean vs Golden Star"
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Постер New Orlean vs Golden Star</h2>
@@ -119,7 +161,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/seafood.jpg" alt="Ресторан Seafood лого" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/application-resorant.jpg 1x,
+                                                ./images/portfolio/application-resorant@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/application-resorant.jpg" 
+                                            alt="Ресторан Seafood лого" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Ресторан Seafood</h2>
@@ -138,7 +187,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/headset.jpg" alt="Наушники" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/marketing-prime.jpg 1x,
+                                                ./images/portfolio/marketing-prime@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/marketing-prime.jpg" 
+                                            alt="Наушники" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Проект Prime</h2>
@@ -157,7 +213,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/boxes.jpg" alt="Коробки" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/application-boxes.jpg 1x,
+                                                ./images/portfolio/application-boxes@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/application-boxes.jpg" 
+                                            alt="Коробки" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Проект Boxes</h2>
@@ -176,7 +239,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/monitor.jpg" alt="Монитор" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/web-site-borders.jpg 1x,
+                                                ./images/portfolio/web-site-borders@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/web-site-borders.jpg" 
+                                            alt="Монитор" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Inspiration has no Borders</h2>
@@ -195,7 +265,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/book.jpg" alt="Книга" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/design-limited.jpg 1x,
+                                                ./images/portfolio/design-limited@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/design-limited.jpg" 
+                                            alt="Книга" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Издание Limited Edition</h2>
@@ -214,7 +291,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/label_tag.jpg" alt="Лейбл" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/marketing-lab.jpg 1x,
+                                                ./images/portfolio/marketing-lab@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/marketing-lab.jpg" 
+                                            alt="Лейбл" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Проект LAB</h2>
@@ -233,7 +317,14 @@
                                                     получить
                                                     исчерпывающие сведения о компании или частном лице.</p>
                                             </div>
-                                            <img class="product__image" src="./images/portfolio/laptop_business.jpg" alt="Бизнес ноутбук" width="370">
+                                            <img class="product__image" 
+                                            srcset="
+                                                ./images/portfolio/application-business.jpg 1x,
+                                                ./images/portfolio/application-business@2x.jpg 2x
+                                            "
+                                            src="./images/portfolio/application-business.jpg" 
+                                            alt="Бизнес ноутбук" 
+                                            width="450">
                                         </div>
                                         <div class="product__description-wrapper">
                                             <h2 class="product__title">Growing Business</h2>
@@ -248,7 +339,7 @@
             </section>
         </main>
         <footer class="footer-main">
-            <div class="container container--flex">
+            <div class="container container--flex-wrap">
                 <div class="footer-main__address-wrapper">
                     <a class="logo logo--white" href="./index.html"><span class="logo__color-part">Web</span>Studio</a>
                     <address class="footer-main__address">
@@ -263,7 +354,7 @@
                 </div>
                 <div class="footer-main__socials-wrapper">
                     <h3 class="footer-main__socials-title">присоединяйтесь</h3>
-                    <ul class="social-links">
+                    <ul class="social-links social-links--flex-start">
                         <li class="social-links__item">
                             <a class="social-links__link social-links__link--inverse" href="#">
                                 <svg class="social-links__link-icon" width="20" height="20">

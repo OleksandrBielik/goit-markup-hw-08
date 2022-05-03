@@ -27,9 +27,6 @@
     display: flex;
     justify-content: center;
     margin-top: 16px;
-    @media screen and (min-width:1200px) {
-        justify-content: flex-start;
-    }
 
     :not(:first-child) {
         margin-left: 10px;
@@ -50,6 +47,14 @@
 
     &:not(:first-child) {
         margin-left: 10px;
+    }
+
+}
+
+.social-links--flex-start {
+
+    @media screen and (min-widt:1200px){
+        justify-content: flex-start;
     }
 
 }

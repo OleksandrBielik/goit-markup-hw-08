@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="css/main.min.css">
     </head>
     <body>
-        <!-- <header class="header-main">
+        <header class="header-main">
             <div class="container container--flex">
                 <nav>
                     <ul class="header-main__nav-list">
@@ -67,15 +67,13 @@
                     </li>
                 </ul>
             </div>
-        </header> -->
+        </header>
         <main class="web-studio">
-            <!-- <section class="section section--inverse">
+            <section class="section section--inverse">
                 <div class="web-studio__wrapper">
-                    <div class="container">
-                        <div class="web-studio__order">
-                            <h1 class="web-studio__order-title">Эффективные решения для вашего бизнеса</h1>
-                            <button class="web-studio__order-button" type="button" data-modal-open>Заказать услугу</button>
-                        </div>
+                    <div class="web-studio__order">
+                        <h1 class="web-studio__order-title">Эффективные решения для вашего бизнеса</h1>
+                        <button class="web-studio__order-button" type="button" data-modal-open>Заказать услугу</button>
                     </div>
                 </div>
             </section>
@@ -172,7 +170,7 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
             <section class="section">
                 <div class="container">
                     <h2 class="web-studio__title">Наша команда</h2>
@@ -185,7 +183,7 @@
                             "
                             src="./images/product-designer.jpg" 
                             alt="Дизайнер" 
-                            width="450">
+                            width="450px">
                             <div class="web-studio__team-wrapper">
                                 <h3 class="web-studio__team-title">Игорь Демьяненко</h3>
                                 <p class="web-studio__team-description">Product Designer</p>
@@ -356,46 +354,46 @@
                     </ul>
                 </div>
             </section>
-            <!-- <section class="section">
+            <section class="section">
                 <div class="container">
                     <h2 class="web-studio__title">Постоянные клиенты</h2>
                     <ul class="web-studio__clients">
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_1"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_2"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_3"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_4"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_5"></use>
                                 </svg>
                             </a>
                         </li>
-                        <li>
+                        <li class="web-studio__clients-item">
                             <a class="web-studio__clients-link" href="#">
                                 <svg class="web-studio__clients-icon" width="170" height="92">
                                     <use href="./images/svg/icons.svg#icon-client_6"></use>
@@ -404,9 +402,9 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
-        <!-- <footer class="footer-main">
+        <footer class="footer-main">
             <div class="container container--flex-wrap">
                 <div class="footer-main__address-wrapper">
                     <a class="logo logo--white" href="./index.html"><span class="logo__color-part">Web</span>Studio</a>
@@ -422,7 +420,7 @@
                 </div>
                 <div class="footer-main__socials-wrapper">
                     <h3 class="footer-main__socials-title">присоединяйтесь</h3>
-                    <ul class="social-links">
+                    <ul class="social-links social-links--flex-start">
                         <li class="social-links__item">
                             <a class="social-links__link social-links__link--inverse" href="#">
                                 <svg class="social-links__link-icon" width="20" height="20">
@@ -469,50 +467,52 @@
         </footer>
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
-                <form class="modal__form-order">
-                    <label class="modal__input-label" for="order-name">Имя</label>
-                    <div class="modal__input-wrapper">
-                        <input class="modal__input" id="order-name" name="name" type="text" placeholder=" ">
-                        <svg class="modal__input-icon" width="18" height="18">
-                            <use href="./images/svg/icons.svg#icon-person-black"></use>
-                        </svg>
-                    </div>
-                    <label class="modal__input-label" for="order-tel">Телефон</label>
-                    <div class="modal__input-wrapper">
-                        <input class="modal__input" id="order-tel" name="tel" type="tel" placeholder=" ">
-                        <svg class="modal__input-icon" width="18" height="18">
-                            <use href="./images/svg/icons.svg#icon-phone-black"></use>
-                        </svg>
-                    </div>
-                    <label class="modal__input-label" for="order-email">Почта</label> 
-                    <div class="modal__input-wrapper">
-                        <input class="modal__input" id="order-email" name="email" type="email" placeholder=" ">
-                        <svg class="modal__input-icon" width="18" height="18">
-                            <use href="./images/svg/icons.svg#icon-email-black"></use>
-                        </svg>
-                    </div>
-                    <label class="modal__input-label" for="order-comments">Комментарий</label>
-                    <textarea class="modal__textarea" id="order-comments" name="comments" placeholder="Введите текст"></textarea>
-                    <div class="modal__checkbox-wrapper">
-                        <input class="modal__checkbox-input" id="order-agreement" name="agreement" type="checkbox">
-                        <label class="modal__checkbox-label" for="order-agreement">
-                            <svg class="modal__checkbox-icon" width="16" height="15">
-                                <use href="./images/svg/icons.svg#icon-check"></use>
+                <div class="modal__wrapper">
+                    <h3 class="modal__title">Оставьте свои данные, мы вам перезвоним</h3>
+                    <form class="modal__form-order">
+                        <label class="modal__input-label" for="order-name">Имя</label>
+                        <div class="modal__input-wrapper">
+                            <input class="modal__input" id="order-name" name="name" type="text" placeholder=" ">
+                            <svg class="modal__input-icon" width="18" height="18">
+                                <use href="./images/svg/icons.svg#icon-person-black"></use>
                             </svg>
-                            <span>Соглашаюсь с рассылкой и принимаю&nbsp;</span>
-                            <a class="modal__agreement-link" href="#">Условия договора</a>
-                        </label>
-                    </div>
-                    <button class="modal__send-button" type="submit">Отправить</button>
-                </form>
-                <button class="modal__close-button" type="button" data-modal-close>
-                    <svg class="modal__close-icon" width="30" height="30">
-                        <use href="./images/svg/icons.svg#icon-close"></use>
-                    </svg>
-                </button>
+                        </div>
+                        <label class="modal__input-label" for="order-tel">Телефон</label>
+                        <div class="modal__input-wrapper">
+                            <input class="modal__input" id="order-tel" name="tel" type="tel" placeholder=" ">
+                            <svg class="modal__input-icon" width="18" height="18">
+                                <use href="./images/svg/icons.svg#icon-phone-black"></use>
+                            </svg>
+                        </div>
+                        <label class="modal__input-label" for="order-email">Почта</label>
+                        <div class="modal__input-wrapper">
+                            <input class="modal__input" id="order-email" name="email" type="email" placeholder=" ">
+                            <svg class="modal__input-icon" width="18" height="18">
+                                <use href="./images/svg/icons.svg#icon-email-black"></use>
+                            </svg>
+                        </div>
+                        <label class="modal__input-label" for="order-comments">Комментарий</label>
+                        <textarea class="modal__textarea" id="order-comments" name="comments" placeholder="Введите текст"></textarea>
+                        <div class="modal__checkbox-wrapper">
+                            <input class="modal__checkbox-input" id="order-agreement" name="agreement" type="checkbox">
+                            <label class="modal__checkbox-label" for="order-agreement">
+                                <svg class="modal__checkbox-icon" width="16" height="15">
+                                    <use href="./images/svg/icons.svg#icon-check"></use>
+                                </svg>
+                                <span>Соглашаюсь с рассылкой и принимаю&nbsp;</span>
+                                <a class="modal__agreement-link" href="#">Условия договора</a>
+                            </label>
+                        </div>
+                        <button class="modal__send-button" type="submit">Отправить</button>
+                    </form>
+                    <button class="modal__close-button" type="button" data-modal-close>
+                        <svg class="modal__close-icon" width="30" height="30">
+                            <use href="./images/svg/icons.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </div> -->
+        </div>
         <script src="./js/modal.js"></script>
         <script src="./js/mobile-menu.js"></script>
     </body>
